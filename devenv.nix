@@ -1,6 +1,9 @@
 { pkgs, lib, config, inputs, ... }:
 {
-  packages = [ pkgs.git ];
+  packages = [
+    pkgs.git
+    pkgs.codecrafters-cli
+  ];
 
   languages.rust.enable = true;
 
